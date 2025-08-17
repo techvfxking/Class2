@@ -1,8 +1,8 @@
 // --- Given Information ---
-let numberOfNotebooks = 3;
-let numberOfPens = 5;
-let priceOfOneNotebook = 40;
-let totalAmountPaid = 200;
+const numberOfNotebooks = 3;
+const numberOfPens = 5;
+const priceOfOneNotebook = 40;
+const totalAmountPaid = 200;
 
 // --- Question 1: What is the price of a single pen? ---
 

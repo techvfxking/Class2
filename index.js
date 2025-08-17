@@ -1,3 +1,4 @@
+//10-08-2025 - Class 2
 /** 
  * To Store Data permanently in way which is non-volatile that is called permanent storage.
  * To store data in volatile way or in memory only that is actually a variable
@@ -45,9 +46,37 @@
  * 
  * all total called variable
  */
-let num1 = 10;
-num1 = 20;
-num1 = 30;
-num1 = (num1 - (num1+num1) * num1)/num1; // B O D M A S
+// let num1 = 10;
+// num1 = 20;
+// num1 = 30;
+// num1 = (num1 - (num1+num1) * num1)/num1; // B O D M A S
 
-console.log(num1); //60 * 30 => 1800 - 30 = 1770 / 30
+// console.log(num1); //60 * 30 => 1800 - 30 = 1770 / 30
+
+
+//17-08-2025 - Class 2
+/**
+ * So a vraible that need to be declared and define/initialized when writing
+ * 
+ * That variable cannot be changed
+ * 
+ * That is known as constant
+ */
+// const name_ = "Joy";
+// const name__ = "l";
+// console.log(name_);
+
+// /**Difference between const and let & var */
+// var abc; // <- You have declared the abc variable using var keyword
+// abc = "abc"; // <- You have defined/initialized the abc variable
+// console.log(abc);
+
+// let def; // <- You have declared the abc variable using let keyword
+// def = "def"; // <- You have defined/initialized the abc variable
+// console.log(def);
+
+
+// const ghi = "ghi"; //'const' declarations must be initialized.
+
+
+
