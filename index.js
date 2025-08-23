@@ -172,17 +172,110 @@
 //     name: "Joy",
 //     status: true
 // }
-let obj1 = {
-    "num1": 100,
-    "num2": 100.56,
-    "name": "Joy",
-    "status": true
-}
-//Object Destructing
-let {num1, num2} = obj1
-console.log(obj1.num1 + obj1.num2);
-console.log(num1 + num2);
-console.log(String(obj1.num1));
+// let obj1 = {
+//     "num1": 100,
+//     "num2": 100.56,
+//     "name": "Joy",
+//     "status": true
+// }
+// //Object Destructing
+// let {num1, num2} = obj1
+// console.log(obj1.num1 + obj1.num2);
+// console.log(num1 + num2);
+// console.log(String(obj1.num1));
 
+//Class 3 - 23/08/2025
+//Functions/Method => Function or Method is a block of codes, or reusable logic of codes, by which we can execute and run our application further
+
+// function print(){
+//     console.log(`Hello Joy, do you know what is the date today? It is ${new Date()}`);
+// }
+
+// print();
+
+// function add(num1, num2, num3, num4){
+//     //const result = num1 + num2 + num3 + num4;
+//     console.log(`The Result is: ${num1} ${num2} ${num3} ${num4}`);
+// }
+
+// add(12, 24, 10,12);
+
+
+// // function
+
+// function add(num1, num2){
+//     console.log(`add two numbers ${num1 + num2}`);
+// }
+
+// add(10, 10);
+
+// function subtraction(num1, num2){
+//     console.log(`subtraction numbers ${num1 - num2}`);
+// }
+//  subtraction(50, 30);
+
+//  function multiplication(num1, num2){
+//     console.log(`multiplication two numbers ${num1 * num2}`);
+//  }
+//  multiplication(25, 25);
+
+// function division(num1, num2){
+//     console.log(`division two numbers ${num1 / num2}`);
+// } 
+// division(100, 25);
+
+
+//If condition or Else If Condition or Else Condition
+// let num1 = 10.5;
+// if (num1 == 5) {
+//     console.log("True")
+// } else if (num1 == 10) {
+//     console.log("Partially True");
+// } else if (num1 == 10.5) {
+//     console.log("Partially True1");
+// } else {
+//     console.log("False");
+// }
+
+function logValue(value) {
+    console.log(value);
+}
+
+function operations(num1, num2, op) {
+
+    // if (num1 == undefined) {
+    //     console.log("Please enter num1");
+    // } else if (num2 == undefined) {
+    //     console.log("Please enter num2");
+    // } else if (op == undefined) {
+    //     console.log("Please type from this: '+' or '-' or '*' or '/' ");
+    // } else {
+    //     //console.log(`${num1} ${op} ${num2}`)
+    // }
+
+    const convertedNum1 = Number(num1);
+    const convertedNum2 = Number(num2);
+    const commonLogText = `The result of the euation is => ${num1} ${op} ${num2} = `;
+
+    if (num1 == undefined || num2 == undefined || op == undefined) {
+        logValue("Please enter all the valid parameters");
+    } else if (Number.isNaN(convertedNum1) || Number.isNaN(convertedNum2)) {
+        logValue("Please enter correct number value in num1 or num2");
+    } else {
+        if (op == "+") {
+            logValue(`${commonLogText} ${convertedNum1 + convertedNum2}`);
+        } else if (op == "-") {
+            logValue(`${commonLogText} ${convertedNum1 - convertedNum2}`);
+        } else if (op == "*") {
+            logValue(`${commonLogText} ${convertedNum1 * convertedNum2}`);
+        } else if (op == "/") {
+            logValue(`${commonLogText} ${convertedNum1 / convertedNum2}`);
+        } else {
+            logValue("Please enter a valid op type: from this section => '+' or '-' or '*' or '/'");
+        }
+    }
+}
+
+operations(10,12,"-");
 
 
