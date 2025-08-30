@@ -20,7 +20,7 @@
 
 // Example:
 function add(a, b) {          // here a and b are parameters
-  return a + b;               // returns the sum
+    return a + b;               // returns the sum
 }
 
 let result = add(5, 3);       // function call with arguments 5 and 3
@@ -48,7 +48,7 @@ console.log(result);          // output: 8
 
 // উদাহরণ:
 function addV1(a, b) {          // এখানে a এবং b হলো প্যারামিটার
-  return a + b;               // যোগফল ফেরত দিচ্ছে
+    return a + b;               // যোগফল ফেরত দিচ্ছে
 }
 
 let resultV1 = addV1(5, 3);       // ফাংশন কল করা হলো 5 এবং 3 আর্গুমেন্ট দিয়ে
@@ -193,8 +193,8 @@ function printOutput(msg) {
     console.log(msg);
 }
 
-function isAdult(age){
-    if (age >=18) {
+function isAdult(age) {
+    if (age >= 18) {
         printOutput("Adult");
     } else {
         printOutput("Minor");
@@ -237,8 +237,8 @@ function showMessage(msg) {
     console.log(msg);
 }
 
-function isEven(number){
-    if(number % 2 == 0) {
+function isEven(number) {
+    if (number % 2 == 0) {
         showMessage("Even");
     } else {
         showMessage("Odd");
@@ -261,10 +261,10 @@ function displayMsg(msg) {
     console.log(msg);
 }
 
-function largerNumber(x,y){
-    if(x>y) {
+function largerNumber(x, y) {
+    if (x > y) {
         displayMsg(`x => ${x} is larger`);
-    } else if (x<y) {
+    } else if (x < y) {
         displayMsg(`y => ${y} is larger`);
     }
     else {
@@ -272,9 +272,9 @@ function largerNumber(x,y){
     }
 }
 
-largerNumber(10,50);
-largerNumber(100,100);
-largerNumber(25,10);
+largerNumber(10, 50);
+largerNumber(100, 100);
+largerNumber(25, 10);
 
 // 5. Multiply by Two
 // Write a function doubleNumber(num) that:
@@ -289,9 +289,131 @@ function outputMessage(msg) {
     console.log(msg);
 }
 
-function doubleNumber(num){
+function doubleNumber(num) {
     let result = num * 2;
     outputMessage(`Double of => ${num} is ${result}`);
 }
 
 doubleNumber(12);
+
+// 1. Temperature Check
+// Write a function checkTemperature(temp) that:
+
+// Prints "Hot" if temp is greater than 30.
+
+// Prints "Cold" if temp is less than 15.
+
+// Prints "Moderate" otherwise.
+
+// Use a helper function printResult(msg) to display the output.
+
+function printResult(msg) {
+    console.log(msg);
+}
+
+function checkTemperature(temp) {
+    if (temp > 30) {
+        printResult("Hot");
+    }
+    else if (temp < 15) {
+        printResult("Cold");
+    }
+    else {
+        printResult("Moderate");
+    }
+}
+
+checkTemperature(30);
+checkTemperature(31);
+checkTemperature(14);
+
+// 2. Calculate Rectangle Area
+// Write a function calculateArea(length, width) that:
+
+// Calculates the area of a rectangle.
+
+// Prints "Area is: result".
+
+// Use a helper function logOutput(msg) for output.
+
+function logOutput(msg) {
+    console.log(msg);
+}
+
+function calculateArea(length, width) {
+    let area = length * width;
+    logOutput(`Area is: ${area}`);
+}
+
+calculateArea(5, 10);
+
+// 3. Positive, Negative, or Zero
+// Write a function checkNumber(num) that:
+
+// Prints "Positive" if the number is greater than zero.
+
+// Prints "Negative" if less than zero.
+
+// Prints "Zero" if equal to zero.
+
+// Use a helper function showMsg(msg) for printing.
+
+function showMsg(msg) {
+    console.log(msg);
+}
+function checkNumber(num) {
+    if (num > 0) {
+        showMsg("Positive");
+    } else if (num < 0) {
+        showMsg("Negative");
+    } else {
+        showMsg("Zero");
+    }
+}
+
+checkNumber(7);
+checkNumber(-5);
+checkNumber(0);
+
+// 4. Check Voting Eligibility
+// Write a function canVote(age) that:
+
+// Prints "Eligible to vote" if age is 18 or above.
+
+// Prints "Not eligible to vote" if below 18.
+
+// Use the helper function displayOutput(msg) for output.
+
+function displayOutput(msg) {
+    console.log(msg)
+}
+
+function canVote(age) {
+    if (age >= 18) {
+        displayOutput("Eligible to vote");
+    } else {
+        displayOutput("Not eligible to vote");
+    }
+}
+
+canVote(22);
+canVote(15);
+
+// 5. Get Square of a Number
+// Write a function squareNumber(n) that:
+
+// Computes the square of the input number.
+
+// Prints "Square of n is result".
+
+// Use a helper function outputLog(msg) to display the result.
+
+function outputLog(msg) {
+    console.log(msg);
+}
+function squareNumber(n) {
+    let square = n * n;
+    outputLog(`Square of ${n} is ${square}`);
+}
+
+squareNumber(12);
