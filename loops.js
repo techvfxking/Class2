@@ -26,7 +26,6 @@
 //Comparison Operators => ==, ===, !=, !==, >, <, >=, <=
 //Logical Operators => &&(AND), ||(OR), !(NOT)
 //Ternary Operators => (condition) ? true : false 
-  //
 //Example of operators
 
 // ## 1. Arithmetic Operators => +, -, *, /, %
@@ -85,23 +84,53 @@ let c = a + b;
 // //c = c + 10
 
 // ## 3. Comparison Operators => ==, ===, !=, !==, >, <, >=, <=
-    // console.log(a == b);
-    // console.log(a == '10');
-    // console.log(a === '10');
-    // console.log(a === 10);
+// console.log(a == b);
+// console.log(a == '10');
+// console.log(a === '10');
+// console.log(a === 10);
 
-    // console.log(a != b);
-    // console.log(a != '10');
-    // console.log(a !== '10');
+// console.log(a != b);
+// console.log(a != '10');
+// console.log(a !== '10');
 
-    // console.log(a != b); // true
-    // console.log(a < b); // true
-    // console.log(a > b); // false
-    // console.log(a <= b); // true
-    // console.log(a >= b); // false
-    // console.log(a === b); // false
-    // console.log(a !== b); // true
-    
+// console.log(a != b); // true
+// console.log(a < b); // true
+// console.log(a > b); // false
+// console.log(a <= b); // true
+// console.log(a >= b); // false
+// console.log(a === b); // false
+// console.log(a !== b); // true
+
+// ## 4. Logical Operators => &&(AND), ||(OR), !(NOT)
+//console.log(a < b || 5 !== 5); //False
+
+//console.log(2 !== 2 || 1 !== 1);// false
+
+// let yes = true;
+// let no = false;
+
+// console.log(!yes);
+
+//let isLoggedIn = true;
+// if (!isLoggedIn) { // if(isLoggedIn !== true)
+//     console.log("Not Logged In");
+// } else if (isLoggedIn) { // if(isLoggedIn === true)
+//     console.log("Logged In...");
+// }
+
+// ## 5. Ternary Operators => (condition) ? true : false 
+let isLoggedIn = "Hello";
+//console.log(isLoggedIn ? "Logged In..." : "Not Logged In...");
+console.log(
+    isLoggedIn === true ? "Logged In..." 
+    : isLoggedIn === false ? "Not Logged In..." 
+    : typeof isLoggedIn === 'string' ? "This is string" 
+    : typeof isLoggedIn === 'number' ? "This is number" 
+    : "Invalid"
+);
+//শর্ত ? সত্য হলে যা হবে : মিথ্যা হলে যা হবে
+//উদাহরণ: let result = (marks >= 40) ? 'pass' : 'fail';
+
 // console.log(a < b && a != b); // true
 // console.log(a < b || a == b); // true
 // console.log(!(a < b)); // false
