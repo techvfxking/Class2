@@ -25,8 +25,8 @@
 //Assignment Operators => =, +=, -=, *=, /=, %=
 //Comparison Operators => ==, ===, !=, !==, >, <, >=, <=
 //Logical Operators => &&(AND), ||(OR), !(NOT)
-//Ternary Operators => (condition) ? true : false
-
+//Ternary Operators => (condition) ? true : false 
+  //
 //Example of operators
 
 // ## 1. Arithmetic Operators => +, -, *, /, %
